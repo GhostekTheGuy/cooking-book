@@ -10,13 +10,13 @@ export function HeroSection() {
             {/* Left Content */}
             <div className="flex-1 z-10">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-                Konkurs
+                Twoja Książka
                 <br />
-                Kulinarny
+                Kucharska
               </h1>
               <p className="text-muted-foreground mb-6 max-w-md">
-                Odkryj nasze najlepsze przepisy i podejmij wyzwanie.
-                Weź udział w naszym cotygodniowym przyjęciu i udowodnij, że jesteś ekspertem.
+                Zbieraj ulubione przepisy w jednym miejscu.
+                Dziel się swoimi kulinarnymi dziełami i odkrywaj inspiracje od innych pasjonatów gotowania.
               </p>
               <Link href="/recipes/new">
                 <Button size="lg" className="rounded-full px-8">
