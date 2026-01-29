@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-dm-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-pink: var(--pink);
+  --color-pink-light: var(--pink-light);
+  --color-teal: var(--teal);
+  --color-coral: var(--coral);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #fef6f3;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #e85d4c;
+  --primary-foreground: #ffffff;
+  --secondary: #fef0ec;
+  --secondary-foreground: #1a1a1a;
+  --muted: #f5f5f5;
+  --muted-foreground: #737373;
+  --accent: #fef0ec;
+  --accent-foreground: #1a1a1a;
+  --destructive: #ef4444;
+  --border: #e5e5e5;
+  --input: #e5e5e5;
+  --ring: #e85d4c;
+  --pink: #f4b4b4;
+  --pink-light: #fef6f3;
+  --teal: #4ecdc4;
+  --coral: #e85d4c;
+  --chart-1: #e85d4c;
+  --chart-2: #4ecdc4;
+  --chart-3: #f4b4b4;
+  --chart-4: #ffd93d;
+  --chart-5: #6c5ce7;
+  --sidebar: #fef6f3;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #e85d4c;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fef0ec;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #e5e5e5;
+  --sidebar-ring: #e85d4c;
+}
+
+.dark {
+  --background: #1a1a1a;
+  --foreground: #fafafa;
+  --card: #262626;
+  --card-foreground: #fafafa;
+  --popover: #262626;
+  --popover-foreground: #fafafa;
+  --primary: #e85d4c;
+  --primary-foreground: #ffffff;
+  --secondary: #404040;
+  --secondary-foreground: #fafafa;
+  --muted: #404040;
+  --muted-foreground: #a3a3a3;
+  --accent: #404040;
+  --accent-foreground: #fafafa;
+  --destructive: #ef4444;
+  --border: #404040;
+  --input: #404040;
+  --ring: #e85d4c;
+  --sidebar: #262626;
+  --sidebar-foreground: #fafafa;
+  --sidebar-primary: #e85d4c;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #404040;
+  --sidebar-accent-foreground: #fafafa;
+  --sidebar-border: #404040;
+  --sidebar-ring: #e85d4c;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Decorative circles */
+.decorative-circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.decorative-circle-teal {
+  background-color: var(--teal);
+}
+
+.decorative-circle-pink {
+  background-color: var(--pink);
+}
+
+.decorative-circle-coral {
+  background-color: var(--coral);
+}
